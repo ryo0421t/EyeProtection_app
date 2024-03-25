@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.eyeprotection">
+
+    <!--    権限    -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="アイプロ"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EyeProtection">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Tips1Activity" />
+        <activity android:name=".Tips2Activity" />
+        <activity android:name=".Tips3Activity" />
+        <activity android:name=".Tips4Activity" />
+        <activity android:name=".CameraActivity"/>
+        <activity android:name=".DiaryActivity"/>
+        <activity android:name=".ResultActivity"/>
+
+    </application>
+
+</manifest>
